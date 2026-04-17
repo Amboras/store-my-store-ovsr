@@ -4,36 +4,44 @@
 
 @layer base {
   :root {
-    /* Kerala Spice Palette — warm saffron, deep turmeric, forest green */
-    --background: 36 30% 97%;
-    --foreground: 20 30% 12%;
-    --muted: 36 20% 92%;
-    --muted-foreground: 20 15% 45%;
-    --accent: 28 80% 48%;       /* deep turmeric-orange */
+    /* Spiceasy — Authentic Kerala Palette */
+    /* Warm ivory parchment background */
+    --background: 40 35% 97%;
+    /* Deep Kerala forest-brown foreground */
+    --foreground: 18 35% 10%;
+    /* Warm cream muted */
+    --muted: 38 25% 91%;
+    --muted-foreground: 18 18% 46%;
+    /* Saffron-turmeric accent */
+    --accent: 33 92% 44%;
     --accent-foreground: 0 0% 100%;
-    --border: 36 20% 86%;
-    --ring: 28 80% 48%;
-    --primary: 20 30% 12%;
-    --primary-foreground: 36 30% 97%;
+    /* Soft sand border */
+    --border: 38 22% 84%;
+    --ring: 33 92% 44%;
+    --primary: 18 35% 10%;
+    --primary-foreground: 40 35% 97%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Brand colors (dynamically injected from Store.metadata.brand) */
-    /* Access in CSS: var(--brand-primary), var(--brand-secondary) */
-    /* Managed by BrandStyleInjector component */
+    /* Kerala brand accent colors */
+    --kerala-green: 145 42% 26%;   /* deep forest green */
+    --kerala-gold: 43 96% 46%;     /* turmeric gold */
+    --kerala-red: 6 80% 42%;       /* Kerala temple red */
+    --kerala-cream: 40 55% 95%;    /* coconut cream */
+    --kerala-spice: 23 85% 38%;    /* cinnamon brown */
   }
 
   .dark {
-    --background: 20 20% 7%;
-    --foreground: 36 25% 92%;
-    --muted: 20 15% 14%;
-    --muted-foreground: 36 10% 55%;
-    --accent: 28 75% 55%;
+    --background: 18 25% 7%;
+    --foreground: 40 30% 92%;
+    --muted: 18 18% 13%;
+    --muted-foreground: 38 12% 56%;
+    --accent: 33 85% 52%;
     --accent-foreground: 0 0% 100%;
-    --border: 20 15% 18%;
-    --ring: 28 75% 55%;
-    --primary: 36 25% 92%;
-    --primary-foreground: 20 20% 7%;
+    --border: 18 18% 17%;
+    --ring: 33 85% 52%;
+    --primary: 40 30% 92%;
+    --primary-foreground: 18 25% 7%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
   }

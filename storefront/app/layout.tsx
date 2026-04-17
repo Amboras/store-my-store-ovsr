@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Lato, Inter } from 'next/font/google'
+import { Playfair_Display, Nunito_Sans } from 'next/font/google'
 import { Providers } from './providers'
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
@@ -14,26 +14,26 @@ import dynamic from 'next/dynamic'
 
 const CookieConsent = dynamic(() => import('@/components/cookie-consent'))
 
-const heading = Lato({
+const heading = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '600', '700', '800'],
   variable: '--font-heading',
   display: 'swap',
 })
 
-const body = Inter({
+const body = Nunito_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-body',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Store — Modern Commerce',
-    template: '%s | Store',
+    default: 'Spiceasy — Kerala Spices',
+    template: '%s | Spiceasy',
   },
-  description: 'Discover curated products crafted with care. A modern ecommerce experience.',
+  description: 'Hand-picked, sun-dried spices straight from the hills of Kerala. Cardamom, pepper, turmeric & more — freshly packed from Kumily farms.',
 }
 
 export default function RootLayout({

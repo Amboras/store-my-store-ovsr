@@ -47,18 +47,27 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <span className="text-2xl">🌿</span>
-              <span className="font-heading text-xl font-semibold">Kerala Spices</span>
+            <Link href="/" className="inline-flex items-center gap-2.5 group">
+              <span className="text-2xl group-hover:scale-110 transition-transform duration-200">🌿</span>
+              <div>
+                <span className="font-heading text-xl font-bold text-foreground block">Spiceasy</span>
+                <span className="text-[9px] text-accent font-semibold uppercase tracking-[0.2em]">Kerala · Est. 2024</span>
+              </div>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
+            {/* Kerala decorative divider */}
+            <div className="flex items-center gap-2 my-4 w-28">
+              <div className="h-px flex-1 bg-accent/30" />
+              <span className="text-accent text-xs">❋</span>
+              <div className="h-px flex-1 bg-accent/30" />
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Farm-fresh spices from Kumily, Kerala — sun-dried, naturally preserved,
               and packed with the flavours of God&apos;s Own Country.
             </p>
-            <div className="mt-4 text-xs text-muted-foreground space-y-1">
+            <div className="mt-5 text-xs text-muted-foreground space-y-2">
               <p>📍 Kumily, Idukki District, Kerala</p>
               <p>📞 +91 98765 43210</p>
-              <p>✉️ hello@keralaheritage.in</p>
+              <p>✉️ hello@spiceasy.in</p>
             </div>
           </div>
 
@@ -108,7 +117,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Kerala Spices, Kumily. All rights reserved.
+            &copy; {new Date().getFullYear()} Spiceasy, Kumily, Kerala. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <button

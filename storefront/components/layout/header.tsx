@@ -81,14 +81,16 @@ export default function Header() {
             </button>
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl">🌿</span>
-              <span className="font-heading text-xl font-semibold tracking-tight leading-tight">
-                Kerala Spices
-                <span className="block text-[10px] text-muted-foreground font-body font-normal uppercase tracking-widest -mt-0.5">
-                  Kumily · Est. 2024
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <span className="text-2xl group-hover:scale-110 transition-transform duration-200">🌿</span>
+              <div className="leading-tight">
+                <span className="font-heading text-xl font-bold tracking-tight text-foreground block">
+                  Spiceasy
                 </span>
-              </span>
+                <span className="block text-[9px] text-accent font-body font-semibold uppercase tracking-[0.2em] -mt-0.5">
+                  Kerala · Est. 2024
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -157,7 +159,7 @@ export default function Header() {
             className="absolute inset-y-0 left-0 w-80 max-w-[85vw] bg-background animate-slide-in-right"
           >
             <div className="flex items-center justify-between p-4 border-b">
-              <span className="font-heading text-xl font-semibold">🌿 Kerala Spices</span>
+              <span className="font-heading text-xl font-bold">🌿 Spiceasy</span>
               <button
                 ref={mobileMenuCloseRef}
                 onClick={() => setIsMobileMenuOpen(false)}
